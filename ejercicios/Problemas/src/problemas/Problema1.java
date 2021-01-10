@@ -16,6 +16,21 @@ public class Problema1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        int[][] informacion = {{1, 2, 3}, {10, 20, 30}, {100, 200, 300}};
+         presentarValores(informacion);
+    }
+    
+    public static void presentarValores(int [][] datos){
+        String cadena = "";
+        for (int i = 0; i < datos.length; i++) {
+            for (int j = 0; j < datos[i].length; j++) {
+                if(i<=j){
+                    cadena = String.format("%s%s\t", cadena, datos[i][j]);
+                }
+            }
+        }
+        System.out.println(cadena);;
+    
     }
     
 }
